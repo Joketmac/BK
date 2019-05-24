@@ -1,0 +1,271 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title> 首页_我的篮球公园 </title>
+<!--反向解析写法-->
+  <link href="{{ url_for('static',filename='css/base.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='css/index.css')}}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='css/m.css')}}" rel="stylesheet">
+
+
+  <script src="{{ url_for('static',filename='js/jquery.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static',filename='js/jquery.easyfader.min.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static',filename='js/scrollReveal.js')}}" type="text/javascript"></script>
+  <script src="{{ url_for('static',filename='js/common.js')}}" type="text/javascript"></script>
+</head>
+<body>
+<header> 
+  <!--menu begin-->
+  <div class="menu">
+    <nav class="nav" id="topnav">
+      <h1 class="logo"><a href="{{ url_for('first.shouye')}}">我的篮球公园</a></h1>
+      <li><a href="{{ url_for('first.shouye')}}">网站首页</a> </li>
+      <li><a href="{{ url_for('first.one')}}">NBA</a> </li>
+      <li><a href="{{ url_for('first.two')}}">球星</a>
+        <ul class="sub-nav">
+          <li><a href="share">麦迪</a></li>
+          <li><a href="share">科比</a></li>
+          <li><a href="share">詹姆斯</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ url_for('first.three')}}">类型</a>
+        <ul class="sub-nav">
+          <li><a href="list.html">扣篮</a></li>
+          <li><a href="list.html">上篮</a></li>
+          <li><a href="list.html">干拔</a></li>
+          <li><a href="list.html">后仰</a></li>
+          <li><a href="list.html">三分</a></li>
+        </ul>
+      </li>
+      <li><a href="{{ url_for('first.four')}}">生涯</a>
+        <ul class="sub-nav">
+          <li><a href="life.html">麦迪生涯录像</a></li>
+          <li><a href="life.html">科比生涯录像</a></li>
+          <li><a href="life.html">詹姆斯比赛录像</a></li>
+          <li><a href="life.html">夺冠之路</a></li>
+        </ul>
+       <li><a href="{{ url_for('first.five')}}">高光时刻</a> </li>
+      <li><a href="{{ url_for('first.six')}}">留言</a> </li>
+      <li><a href="{{ url_for('first.server')}}">内容</a> </li>
+
+
+    </nav>
+  </div>
+
+</header>
+<article> 
+  <!--banner begin-->
+ <div class="picsbox"> 
+  <div class="banner">
+    <div id="banner" class="fader">
+      <li class="slide" ><a href="/" target="_blank"><img src="../static/images/1.jpg"><span class="imginfo">科比</span></a></li>
+      <li class="slide" ><a href="/" target="_blank"><img src="../static/images/9.jpeg"><span class="imginfo">麦迪</span></a></li>
+      <li class="slide" ><a href="/" target="_blank"><img src="../static/images/15.jpeg"><span class="imginfo">詹姆斯</span></a></li>
+      <li class="slide" ><a href="/" target="_blank"><img src="../static/images/3.jpeg"><span class="imginfo">冠军</span></a></li>
+      <div class="fader_controls">
+        <div class="page prev" data-target="prev">&lsaquo;</div>
+        <div class="page next" data-target="next">&rsaquo;</div>
+        <ul class="pager_list">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!--banner end-->
+  <div class="toppic">
+    <li> <a href="/" target="_blank"> <i><img src="{{ url_for('static',filename='images/2.jpg')}}"></i>
+      <h2>樱花庄的宠物女孩</h2></a> </li>
+      <!--<span></span> -->
+    <li> <a href="/" target="_blank"> <i><img src="{{ url_for('static',filename='images/8.jpg')}}"></i>
+      <h2>四月是你的谎言</h2></a> </li>
+      <!--<span>学无止境</span> -->
+  </div>
+  </div>
+  <div class="blank"></div>
+  <!--blogsbox begin-->
+  <div class="blogsbox">
+    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+      <h3 class="blogtitle"><a href="/" target="_blank">麦迪时刻</a></h3>
+      <span class="blogpic"><a href="/" title=""><img src="{{ url_for('static',filename='images/4.jpg')}}" alt=""></a></span>
+      <p class="blogtext"> 成名作35秒13分 </p>
+      <div class="bloginfo">
+        <ul>
+          <li class="author"><a href="{{ url_for('first.shouye')}}">麦迪</a></li>
+          <li class="lmname"><a href="{{ url_for('first.shouye')}}">天神下凡一锤五</a></li>
+          <li class="timer">2018-5-13</li>
+          <li class="view"><span>34567</span>已阅读</li>
+          <li class="like">9999</li>
+        </ul>
+      </div>
+    </div>
+    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+      <h3 class="blogtitle"><a href="{{ url_for('first.shouye')}}" target="_blank"><img src="{{ url_for('static',filename='images/7.jpg')}}" alt="">Fate/stay night</a></h3>
+      <p class="blogtext">冠军之战就此开始...</p>
+      <div class="bloginfo">
+        <ul>
+          <li class="author"><a href="{{ url_for('first.shouye')}}">詹姆斯</a></li>
+          <li class="lmname"><a href="{{ url_for('first.shouye')}}">一场关于荣耀的决战</a></li>
+          <li class="timer">2018-5-13</li>
+          <li class="view">4567已阅读</li>
+          <li class="like">9999</li>
+        </ul>
+      </div>
+    </div>
+    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+      <h3 class="blogtitle"><a href="{{ url_for('first.shouye')}}" target="_blank">我的英雄学院</a></h3>
+      <span class="bplist"><a href="{{ url_for('first.shouye')}}" title="">
+      <li><img src="{{ url_for('static',filename='images/5.jpg')}}" alt=""></li>
+      <li><img src="{{ url_for('static',filename='images/6.jpg')}}" alt=""></li>
+      <li><img src="{{ url_for('static',filename='images/11.png')}}" alt=""></li>
+      </a></span>
+      <p class="blogtext">这一刻，你就是英雄！！！ </p>
+      <div class="bloginfo">
+        <ul>
+          <li class="author"><a href="/">麦迪</a></li>
+          <li class="lmname"><a href="/">什么才是英雄？</a></li>
+          <li class="timer">2018-5-13</li>
+          <li class="view"><span>34567</span>已阅读</li>
+          <li class="like">9999</li>
+        </ul>
+      </div>
+    </div>
+    <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+      <h3 class="blogtitle"><a href="{{ url_for('first.shouye')}}" target="_blank">啦啦啦</a></h3>
+      <span class="bigpic"><a href="{{ url_for('first.shouye')}}" title=""><img src="{{ url_for('static',filename='images/13.jpg')}}" alt=""></a></span>
+      <p class="blogtext"> 无形之刃,最为致命 </p>
+      <div class="bloginfo">
+        <ul>
+          <li class="author"><a href="{{ url_for('first.shouye')}}">科比</a></li>
+          <li class="lmname"><a href="{{ url_for('first.shouye')}}">黑曼巴</a></li>
+          <li class="timer">2018-5-13</li>
+          <li class="view"><span>34567</span>已阅读</li>
+          <li class="like">9999</li>
+        </ul>
+      </div>
+    </div>
+     <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+      <h3 class="blogtitle"><a href="{{ url_for('first.shouye')}}" target="_blank">Another</a></h3>
+      <span class="bigpic"><a href="{{ url_for('first.shouye')}}" title=""><img src="{{ url_for('static',filename='images/14.jpg')}}" alt=""></a></span>
+      <p class="blogtext"> 死亡如风 </p>
+      <div class="bloginfo">
+        <ul>
+          <li class="author"><a href="{{ url_for('first.shouye')}}">科比</a></li>
+          <li class="lmname"><a href="{{ url_for('first.shouye')}}">黑曼巴</a></li>
+          <li class="timer">2018-5-13</li>
+          <li class="view"><span>34567</span>已阅读</li>
+          <li class="like">9999</li>
+        </ul>
+      </div>
+    </div>
+     <div class="blogs" data-scroll-reveal="enter bottom over 1s" >
+      <h3 class="blogtitle"><a href="{{ url_for('first.shouye')}}" target="_blank">哈哈哈</a></h3>
+      <span class="bigpic"><a href="{{ url_for('first.shouye')}}" title=""><img src="{{ url_for('static',filename='images/12.jpg')}}" alt=""></a></span>
+      <p class="blogtext">我猜你的枪里 ....  没有子弹 </p>
+      <div class="bloginfo">
+        <ul>
+          <li class="author"><a href="{{ url_for('first.shouye')}}">科比</a></li>
+          <li class="lmname"><a href="{{ url_for('first.shouye')}}">黑曼巴</a></li>
+          <li class="timer">2018-5-13</li>
+          <li class="view"><span>34567</span>已阅读</li>
+          <li class="like">9999</li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+  <!--blogsbox end-->
+  <div class="sidebar">
+    <div class="zhuanti">
+      <h2 class="hometitle">特别推荐</h2>
+      <ul>
+        <li> <i><img src="{{ url_for('static',filename='images/10.jpg')}}"></i>
+          <p>进击的巨人<span><a href="/">阅读</a></span> </p>
+        </li>
+        <li> <i><img src="{{ url_for('static',filename='images/11.jpeg')}}"></i>
+          <p>Another <span><a href="/">阅读</a></span></p>
+        </li>
+        <li> <i><img src="{{ url_for('static',filename='images/3.jpeg')}}"></i>
+          <p>Another <span><a href="/">阅读</a></span></p>
+        </li>
+      </ul>
+    </div>
+    <div class="tuijian">
+      <h2 class="hometitle">推荐文章</h2>
+      <ul class="tjpic">
+        <i><img src="{{ url_for('static',filename='images/10.jpg')}}"></i>
+        <p><a href="/">有点恐怖，血腥</a></p>
+      </ul>
+      <ul class="sidenews">
+        <li> <i><img src="{{ url_for('static',filename='images/11.jpeg')}}"></i>
+          <p><a href="/">邓文新打游戏真tm想蔡徐坤！</a></p>
+          <span>2018-05-13</span> </li>
+        <li> <i><img src="{{ url_for('static',filename='images/11.jpeg')}}"></i>
+          <p><a href="/">杨岩打游戏真tm想蔡徐坤！</a></p>
+          <span>2018-05-13</span> </li>
+        <li> <i><img src="{{ url_for('static',filename='images/11.jpeg')}}"></i>
+          <p><a href="/">熊慧杨打游戏真tm想蔡徐坤！</a></p>
+          <span>2018-05-13</span> </li>
+        <li> <i><img src="{{ url_for('static',filename='images/11.jpeg')}}"></i>
+          <p><a href="/">上面三个渣渣！</a></p>
+          <span>2018-05-13</span> </li>
+      </ul>
+    </div>
+    <div class="tuijian">
+      <h2 class="hometitle">啊哈哈哈</h2>
+      <ul class="tjpic">
+        <i><img src="{{ url_for('static',filename='images/6.jpg')}}"></i>
+        <p><a href="/">麦迪</a></p>
+      </ul>
+      <ul class="sidenews">
+        <li> <i><img src="{{ url_for('static',filename='images/6.jpg')}}"></i>
+          <p><a href="/">麦迪</a></p>
+          <span>2018-05-13</span> </li>
+        <li> <i><img src="{{ url_for('static',filename='images/6.jpg')}}"></i>
+          <p><a href="/">麦迪</a></p>
+          <span>2018-05-13</span> </li>
+        <li> <i><img src="{{ url_for('static',filename='images/6.jpg')}}"></i>
+          <p><a href="/">麦迪</a></p>
+          <span>2018-05-13</span> </li>
+        <li> <i><img src="{{ url_for('static',filename='images/6.jpg')}}"></i>
+          <p><a href="/">麦迪</a></p>
+          <span>2018-05-13</span> </li>
+      </ul>
+    </div>
+    <div class="cloud">
+      <h2 class="hometitle">标签云</h2>
+      <ul>
+        <a href="/">陌上花开</a> <a href="/">校园生活</a> <a href="/">html5</a> <a href="/">SumSung</a> <a href="/">青春</a> <a href="/">温暖</a> <a href="/">阳光</a> <a href="/">三星</a><a href="/">索尼</a> <a href="/">华维荣耀</a> <a href="/">三星</a> <a href="/">索尼</a>
+      </ul>
+    </div>
+    <div class="links">
+      <h2 class="hometitle">友情链接</h2>
+      <ul>
+        <li><a href="http://www.yangqq.com" target="_blank">麦迪时刻</a></li>
+        <li><a href="http://www.yangqq.com" target="_blank">黑曼巴科比</a></li>
+        <li><a href="http://www.yangqq.com" target="_blank">小皇帝詹姆斯</a></li>
+      </ul>
+    </div>
+    <div class="guanzhu" id="follow-us">
+      <h2 class="hometitle">关注我们 么么哒！</h2>
+      <ul>
+        <li class="sina"><a href="/" target="_blank"><span>新浪微博</span>篮球公园</a></li>
+        <li class="tencent"><a href="/" target="_blank"><span>腾讯微博</span>篮球公园</a></li>
+        <li class="qq"><a href="/" target="_blank"><span>QQ号</span>168684455</a></li>
+        <li class="email"><a href="/" target="_blank"><span>邮箱帐号</span>155555555@qq.com</a></li>
+        <li class="wxgzh"><a href="/" target="_blank"><span>微信号</span>15555555</a></li>
+
+      </ul>
+    </div>
+  </div>
+</article>
+<footer>
+  <p>Design by <a href="http://www.yangqq.com" target="_blank">杨青个人博客</a> <a href="/">蜀ICP备11002373号-1</a></p>
+</footer>
+<a href="#" class="cd-top">Top</a>
+</body>
+</html>
